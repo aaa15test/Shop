@@ -1,0 +1,6 @@
+export { default as Header } from './Header'
+export { default as Title } from './Title'
+export { default as Content } from './Content'
+export { default as LeftFilters } from './LeftFilters'
+export { default as ShopProducts } from './ShopProducts'
+export { default as Footer } from './Footer'

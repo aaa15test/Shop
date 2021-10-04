@@ -1,0 +1,53 @@
+_white = #fff
+_gray = #585858
+_description = #7c7c7c
+
+.root
+  background-color _white
+
+.logo
+  width 100%
+  height 208px
+
+  +tablet()
+    height 280px
+
+  +desktop()
+    height 340px
+
+  +wide()
+    height 500px
+
+.content
+  position absolute
+  top 65
+  left 3u
+
+  +tablet()
+    top 95px
+    left 4u
+
+  +desktop()
+    top 125
+    left 6u
+
+  +wide()
+    top 205
+    left 18u
+
+.title
+  font-size 30px
+  margin-bottom 2u
+  color _gray
+  font-weight 700
+
+  +tablet()
+    font-size 40px
+
+.description
+  font-size 14px
+  color _description
+  font-weight 600
+
+.descriptionShop
+  color _gray

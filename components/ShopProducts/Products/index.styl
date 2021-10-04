@@ -1,0 +1,86 @@
+_white = #fff
+_gray = #5d5d5d
+_red = #ee3333
+_darkGray = #474747
+_grayBackground = #626262
+
+.root
+  margin-top 6u
+  flex-direction row
+  flex-wrap wrap
+  justify-content center
+
+  +tablet()
+    margin-top 7u
+    justify-content space-between
+
+.product
+  margin-top 4u
+  width 100%
+  max-width 370px
+  &.first
+    margin 0
+  &.noMarginTablet
+    +tablet()
+      margin 0
+    +desktop()
+      margin 0
+  &.noMarginWide
+    +wide()
+      margin 0
+
+  +tablet()
+    width 48%
+
+  +wide()
+    width 24%
+
+.productImage
+  height 448px
+
+  +tablet()
+    height 398px
+
+  +desktop()
+    height 350px
+
+  +wide()
+    height 234px
+
+.productInfo
+  margin-top 2u
+  flex-direction row
+  justify-content space-between
+
+.name
+  color _gray
+  font-size 14px
+  font-weight 600
+  flex-wrap wrap
+
+  +wide()
+    max-width 140px
+
+.price
+  color _red
+  font-size 14px
+  font-weight 600
+  flex-wrap wrap
+
+.type
+  color _darkGray
+  font-size 14px
+  font-weight 400
+  margin-top 1u
+
+.sale
+  position absolute
+  left 20px
+  top 20px
+  background-color _grayBackground
+  padding 1u
+
+.saleText
+  color _white
+  font-size 14px
+  font-weight 600

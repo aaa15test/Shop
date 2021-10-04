@@ -1,0 +1,42 @@
+_gray = #6c6c6c
+_darkGray = #888888
+_red = #ff4136
+_pink = #ff01f0
+_cyan = #3649ff
+_blue = #00c0ff
+_powderBlue = #00ffae
+_violet = #8a00ff
+
+.root
+  margin-bottom 5.5u
+
+.title
+  color _gray
+  font-size 18px
+  font-weight 600
+
+.colors
+  flex-direction row
+  margin-top 4u
+
+.color
+  width 22px
+  height @width
+  border-radius 22px
+  margin-left 2u
+  &.0
+    background-color _red
+    margin 0
+  &.1
+    background-color _pink
+  &.2
+    background-color _cyan
+  &.3
+    background-color _blue
+  &.4
+    background-color _powderBlue
+  &.5
+    background-color _violet
+
+  +tablet()
+    margin-left 1u

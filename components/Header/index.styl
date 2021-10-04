@@ -1,0 +1,51 @@
+_white = #fff
+_gray = #686868
+_darkGray = #474747
+_blackGray = #3f3f3f
+_red = #ee3333
+
+.root
+  flex-direction row
+  align-items center
+  background-color _white
+  justify-content space-between
+  padding 4u 3u
+
+  +tablet()
+    padding 4u 4u
+
+  +desktop()
+    padding 0 6u
+
+  +wide()
+    padding 0 18u
+
+.logo
+  font-size 36px
+  color _blackGray
+  font-weight 600
+
+.dot
+  color _red
+
+.sections
+  flex-direction row
+  padding 0 1u
+  
+
+.section
+  display none
+
+  +desktop()
+    display flex
+    padding 5u 3u
+    color _darkGray
+    font-size 14px
+    font-weight 600
+
+.icons
+  flex-direction row
+
+.icon
+  &.marginLeft
+    margin-left 3u

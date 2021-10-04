@@ -1,0 +1,112 @@
+_grayBackground = #f5f5f5
+_gray = #585858
+_darkGray = #3f3f3f
+_blackGray = #474747
+_red = #ee3333
+
+.root
+  background-color _grayBackground
+  padding 5u 3u
+
+  +tablet()
+    padding 12u 5u
+    flex-direction row
+    justify-content space-between
+    flex-wrap wrap
+
+  +desktop()
+    padding 12u 6u
+
+  +wide()
+    padding 13u 15u
+
+.experience
+  color _gray
+  font-size 16px
+
+.socialNetworks
+  +tablet()
+    margin-top 4u
+
+.socialNetworksIcons
+  flex-direction row
+  margin-top 2u
+
+.iconWrapper
+  width 30px
+  height @width
+  border 1px solid _darkGray
+  border-radius 999px
+  align-items center
+  justify-content center
+  margin-left 2u
+  &.first
+    margin-left 0
+
+.logo
+  font-size 36px
+  color _darkGray
+  font-weight 600
+
+.dot
+  color _red
+
+.logoHeader
+  margin-top 5u
+
+  +tablet()
+    margin 0
+    align-items center
+
+.sections
+  margin-top 3u
+  flex-direction row
+
+  +tablet()
+    justify-content center
+
+.section
+  color _blackGray
+  font-weight 600
+  font-size 14px
+  text-align center
+  margin-left 2u
+  &.first
+    margin-left 0
+  &.last
+    margin-right 0
+
+  +tablet()
+    margin 0 2u
+
+  +desktop()
+    margin 0 3u
+
+.line
+  background-color _darkGray
+  width 160px
+  height 1px
+  margin-top 2u
+
+.copyright
+  color _gray
+  font-size 14px
+  font-weight 400
+  margin-top 2u
+
+.contacts
+  margin-top 4u
+  
+  +tablet()
+    margin-top 3u
+
+.contact
+  color _gray
+  font-size 14px
+  font-weight 600
+  margin-bottom 1u
+  &.last
+    margin-bottom 0
+
+.contactValue
+  font-weight 400
